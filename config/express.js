@@ -1,7 +1,6 @@
 var express = require('express'),
 morgan = require('morgan'),
 winston = require('winston'),
-config = require('config'),
 path = require('path');
 
 var env = process.env.NODE_ENV || 'development';
@@ -23,8 +22,9 @@ module.exports = function(app) {
 
 	if(env !== 'test') app.use(morgan(log));
 
-	var clientRoot = path.join(global.appRoot, 'client');
 
+	var clientRoot = path.join(global.appRoot, 'client');
+	console.log(clientRoot);
 	app.set('views', clientRoot);
 	app.set('view engine', 'ejs');
 
