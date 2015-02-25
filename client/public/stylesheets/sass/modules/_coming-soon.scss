@@ -4,6 +4,15 @@
 		width: 40%;
 		height: 50%;
 
+		@media screen and(max-width: 460px) {
+			width: 80%;
+			height: 40%;
+		}
+
+		@media screen and(max-width: 780px) {
+			width: 60%;
+		}
+
 		margin: 150px auto;
 
 		background-color: #444444;

@@ -15,14 +15,27 @@
   -webkit-animation: swing 1.5s infinite alternate ease-in-out;
           animation: swing 1.5s infinite alternate ease-in-out;
 }
-/* line 19, ../sass/modules/_coming-soon.scss */
+@media screen and (max-width: 460px) {
+  /* line 3, ../sass/modules/_coming-soon.scss */
+  #coming-soon .sign {
+    width: 80%;
+    height: 40%;
+  }
+}
+@media screen and (max-width: 780px) {
+  /* line 3, ../sass/modules/_coming-soon.scss */
+  #coming-soon .sign {
+    width: 60%;
+  }
+}
+/* line 28, ../sass/modules/_coming-soon.scss */
 #coming-soon .sign:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-/* line 24, ../sass/modules/_coming-soon.scss */
+/* line 33, ../sass/modules/_coming-soon.scss */
 #coming-soon .sign:before {
   position: absolute;
   content: "";
@@ -38,7 +51,7 @@
           transform: rotate(-45deg);
   border-radius: 0 5px 0 0;
 }
-/* line 42, ../sass/modules/_coming-soon.scss */
+/* line 51, ../sass/modules/_coming-soon.scss */
 #coming-soon .sign:after {
   position: absolute;
   content: "";
