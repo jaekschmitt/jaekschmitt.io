@@ -3,6 +3,7 @@
 		<link rel="stylesheet" href="stylesheets/css/site.css">
 	</head>
 	<body>
-		
+		<div id="coming-soon">
+		</div>
 	</body>
 </html>

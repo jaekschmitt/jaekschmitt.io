@@ -24,9 +24,9 @@ module.exports = function(app) {
 
 
 	var clientRoot = path.join(global.appRoot, 'client');
-	console.log(clientRoot);
+	
 	app.set('views', clientRoot);
-	app.set('view engine', 'ejs');
+	app.set('view engine', 'vash');
 
 	app.use(express.static(path.join(clientRoot, 'app')));
 	app.use(express.static(path.join(clientRoot, 'public')));

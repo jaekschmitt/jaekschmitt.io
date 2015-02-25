@@ -17,14 +17,15 @@
   },
   "homepage": "https://github.com/jaekschmitt/jaekschmitt.io",
   "devDependencies": {
+    "grunt-autoprefixer": "^2.2.0",
     "grunt-contrib-compass": "^1.0.1",
     "grunt-contrib-watch": "^0.6.1",
     "matchdep": "^0.3.0"
   },
   "dependencies": {
-    "ejs": "^2.3.1",
     "express": "^4.12.0",
     "morgan": "^1.5.1",
+    "vash": "^0.7.12-1",
     "winston": "^0.9.0"
   }
 }
